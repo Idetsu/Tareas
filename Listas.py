@@ -24,7 +24,7 @@ for w in (lista_2): #Vista usuario
 
     #lista.count("Lopez") //Cuenta cuantos "Lopez" hay en la lista
 
-    #lista.sort(reverse=true) //Ordena de mayor a menor, pero al usar reverse queda de menor a mayor
+    #lista.sort(reverse=true) //Ordena de menor a mayor, pero al usar reverse queda de mayor a menor
 
 
 #llenar lista de numeros aleatorios:
