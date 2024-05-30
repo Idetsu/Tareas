@@ -1,8 +1,8 @@
-#Iniciar sesión
 usr=[]
 passwd=[]
-password=0
 ini=True
+x=0
+z=0
 def registrar():
     user=0(input("Registre su nombre de usuario: "))
     usr.append(user)
@@ -17,19 +17,12 @@ def iniciar():
     else:
         print("Usuario o contraseña incorrectos.")
         ini=False
-
-#Menú
-#1.- Comprar (producto)
-#2.- Vender (producto)
-#3.- Ver dinero
-#4.- Salir
-x=0
-z=0
 while z!=3:
-    print("")
     print("1.- Registrarse")
     print("2.- Iniciar Sesión")
     print("3.- Salir")
+    print("")
+    z=int(input("Ingrese una opción: "))
     if z==1:
         registrar()
     if z==2:
@@ -40,6 +33,8 @@ while z!=3:
             print("1.- Vender ...")
             print("1.- Ver Dinero")
             print("4.- Salir")
+            print("")
+            x=int(input("Ingrese una opción: "))
            if x==1:
             print("")
            if x==2:
@@ -48,7 +43,5 @@ while z!=3:
             print("")
         elif ini==False:
            print("No se ha iniciado sesión.")
-    else:
-        print("Se ha cerrado sesión.")
     if z==3:
         print("Saliendo de la tienda.")
