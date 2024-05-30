@@ -3,11 +3,15 @@ passwd=[]
 ini=True
 x=0
 z=0
+#Registrar con reglas de negocio
+#Por desarrollar Registro: Requerir mayuscula y al menos 1 numero
 def registrar():
     user=0(input("Registre su nombre de usuario: "))
     usr.append(user)
     password=0(input("Registre su contraseña: "))
     passwd.append(password)
+#Por desarrollar Inicio: Crear usuarios independientes, por ahora, mientras ambos datos esten en la
+#lista, se puede iniciar sesión, lo que es incorrecto
 def iniciar():
     userini=0(input("Ingrese su nombre de usuario: "))
     passwordini=0(input("Ingrese su contraseña: "))
@@ -17,6 +21,7 @@ def iniciar():
     else:
         print("Usuario o contraseña incorrectos.")
         ini=False
+#Menu no funciona, posible mala condicion del while
 while z!=3:
     print("1.- Registrarse")
     print("2.- Iniciar Sesión")
