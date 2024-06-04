@@ -1,21 +1,15 @@
-usr=[]
-passwd=[]
+usr=["oscar"]
+passwd=["Oscarm5276"]
 ini=True
 x=0
 z=0
-#Registrar con reglas de negocio
-#Por desarrollar Registro: Requerir mayuscula y al menos 1 numero
-def registrar():
-    user=str(input("Registre su nombre de usuario: "))
-    usr.append(user)
-    password=str(input("Registre su contraseña: "))
-    passwd.append(password)
-#Por desarrollar Inicio: Crear usuarios independientes, por ahora, mientras ambos datos esten en la
-#lista, se puede iniciar sesión, lo que es incorrecto
+print("Usuario: oscar")
+print("Contraseña: Oscarm5276")
+print("")
 def iniciar():
     userini=str(input("Ingrese su nombre de usuario: "))
     passwordini=str(input("Ingrese su contraseña: "))
-    if userini in usr or passwordini in passwd:
+    if userini in usr and passwordini in passwd:
         print("Se ha iniciado sesión.")
         ini=True
         return ini
@@ -24,32 +18,37 @@ def iniciar():
         ini=False
         return ini
 
-while z!=3:
-    print("1.- Registrarse")
-    print("2.- Iniciar Sesión")
-    print("3.- Salir")
+while z!=2:
+    print("1.- Iniciar Sesión")
+    print("2.- Salir")
     print("")
     z=int(input("Ingrese una opción: "))
     if z==1:
-        registrar()
-    if z==2:
         ini=iniciar()
         if ini==True:
+           print("1.- Comprar fertilizantes")
+           print("2.- Comprar semillas")
+           print("3.- Vender verduras")
+           print("4.- Consultar Dinero")
+           print("5.- Salir")
+           print("")
            while x!=4:
-            print("1.- Comprar ...")
-            print("1.- Vender ...")
-            print("1.- Ver Dinero")
-            print("4.- Salir")
-            print("")
             x=int(input("Ingrese una opción: "))
-           if x==1:
-            print("")
-           if x==2:
-            print("")
-           if x==3:
-            print("")
+            if x==5:
+               print("1.- ")
+               print("2.- ")
+               print("3.- ")
+               print("4.- ")
+            if x==2:
+                print("asd2")
+            if x==3:
+             print("asd3")
+            if x==4:
+             print("asd4")
+            if x==5:
+             print("asd5")
         if ini==False:
            print("No se ha iniciado sesión.")
            break
-    if z==3:
+    if z==2:
         print("Saliendo de la tienda.")
